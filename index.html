@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
 	<title>Central de Atendimento - Vinícola Agnello </title>
+	<script>
+		function enviarFormulario() {
+		// código para enviar o formulário, se necessário
+		alert("Obrigado por entrar em contato conosco! Entraremos em contato em breve.");
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -30,26 +36,27 @@
 	<main>
 		<section>
 			<h2>Entre em contato conosco</h2>
-			<form action="enviar-contato.php" method="post">
+			<br>
+			<br>
+			<form id="form-contato" onsubmit="enviarFormulario(); return false;">
 				<label for="nome">Nome:</label>
 				<input type="text" name="nome" id="nome">
-<br/>
-<br/>
+				<br>
+				<br>
 				<label for="email">E-mail:</label>
 				<input type="email" name="email" id="email">
-<br/>
-<br/>
+				<br>
+				<br>
 				<label for="telefone">Telefone:</label>
 				<input type="tel" name="telefone" id="telefone">
-<br/>
-<br/>
+				<br>
+				<br>
 				<label for="mensagem">Mensagem:</label>
 				<textarea name="mensagem" id="mensagem" rows="5"></textarea>
-<br/>
-<br/>
+				<br>
+				<br>
 				<button type="submit">Enviar</button>
 			</form>
-			
 		</section>
 
 		<section>
